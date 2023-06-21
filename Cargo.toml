@@ -1,0 +1,17 @@
+[package]
+name = "learn"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name="mycrate"
+path="src/customcrateroot.rs"
+
+[dependencies]
+# lib={path = "../learn-demo"}  #// 链接本地package
+
+
+[profile.release]
+panic = "abort" # release版发生panic直接中止而不展开调用栈

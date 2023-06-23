@@ -29,6 +29,11 @@ impl<'a> Lifecycle<'a> {
     }
 }
 
+// a>=b  b>=c
+fn test_dep_life<'a: 'b, 'b: 'c, 'c>(a: &'a String, b: &'b String) -> &'c String {
+    a
+}
+
 fn difficult<'a, T>(x: &'a str, y: &'a str, z: T) -> &'a str
 where 
     T: Display

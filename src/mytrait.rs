@@ -1,4 +1,8 @@
 // trait and trait bounds
+// 接口
+// 类型标记
+// 泛型限定
+// 抽象类型（trait object)  动态语言调用
 
 use std::{fmt::{Display, Debug}};
 

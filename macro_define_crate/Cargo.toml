@@ -1,0 +1,15 @@
+[package]
+name = "macro_define_crate"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[dependencies]
+proc-macro2 = "1.0.60"
+quote = "1.0.28"
+syn = "2.0.18"
+
+[lib]
+proc-macro = true # 表示这个crate是一个proc-macro,增加这个配置后，crate的特性就会发生变化，比如这个crate就只能对外导出内部定义的过程宏，而不能导出内部定义的其他内容

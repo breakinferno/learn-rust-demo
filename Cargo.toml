@@ -11,7 +11,7 @@ path="src/customcrateroot.rs"
 
 [dependencies]
 # lib={path = "../learn-demo"}  #// 链接本地package
-
+macro_define_crate = {path="./macro_define_crate"}
 
 [profile.release]
 panic = "abort" # release版发生panic直接中止而不展开调用栈

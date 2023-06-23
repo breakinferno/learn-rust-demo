@@ -3,13 +3,6 @@
 version = 3
 
 [[package]]
-name = "learn"
-version = "0.1.0"
-dependencies = [
- "macro_define_crate",
-]
-
-[[package]]
 name = "macro_define_crate"
 version = "0.1.0"
 dependencies = [

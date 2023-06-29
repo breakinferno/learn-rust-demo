@@ -3,7 +3,7 @@
 // 类型标记
 // 泛型限定  单态化-> 静态派遣
 // 抽象类型（trait object) 特征对象：动态派遣 动态语言调用 dyn Trait(类似实现多态) 如果使用泛型，其实只能实现一种类型，不能混合，比如我想要一个动物vec, 里面有人，猫，狗，泛型就只能
-// 有人或者猫或者狗，dyn Animal 就可以混合
+// 有人或者猫或者狗，dyn Animal 就可以混合 Box<dyn Animal> 或者 &dyn Animal
 
 use std::{fmt::{Display, Debug}};
 
